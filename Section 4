@@ -1,0 +1,244 @@
+#Anmol Mrig, 12/14/2020
+#https://docs.python.org/3/tutorial/controlflow.html
+print(True)
+print(False)
+print(1+1 == 2)
+print(1+1 == 3)
+x = 13
+if x < 10:
+    print(x)
+elif x > 15:
+    print("X is greater than 15")
+else:
+    print(f"{x} is neither less than 10 or greater than 15")
+Friends = ["Alice", "Bob", "Carrol"]
+for friend in Friends:
+    print(f"Hello {friend}")
+for number in range(0,5,2):
+    print(number)
+for number in range(0,10):
+    if number == 7:
+        continue
+    print(number)
+else:
+    print("The loop is over")
+
+def square(x):
+    return((x**2)+1)
+y = 6
+print(square(y))
+def printnstars(n):
+    print("*" * n)
+    print(42)
+print(printnstars(5))
+def plus(x,y = 15):
+    print(x + y)
+plus(5)
+
+print("This Program tells you in what category the number is in")
+x = int(input("Please enter a number"))
+if x < 0:
+    x = 0
+    print("Negative changed to 0")
+elif x == 0:
+    print("Zero")
+elif x ==1:
+    print("Single")
+else:
+    print("More")
+#This program prints the word, and tells you the length of it
+words = ['cat', 'window','defenestrate']
+for w in words:
+    print(w, len(w))
+#This will print the numbers 1-5
+for i in range(5):
+    print(i)
+
+a = ['Mary', 'had', 'a', 'little','lamb']
+for i in range(len(a)):
+    print(i, a[i])
+print(range(10))
+
+#This will print the sum of all the numbers in range(4)
+print(sum(range(4)))
+
+print(list(range(4)))
+
+for n in range(2, 10):
+    for x in range(2, n):
+        if n % x == 0:
+            print(n, 'equals', x, '*', n//x)
+            break
+    else:
+        print(n, 'is a prime number')
+
+for num in range(2, 10):
+    if num % 2 == 0:
+        print("Found an even number", num)
+        continue
+    print("Found an odd number", num)
+
+def fib(n):
+    a, b = 0,1
+    while a < n:
+        print(a, end=',')
+        a, b = b, a+b
+    print()
+fib(500)
+f = fib
+f(6)
+fib(0)
+print(fib(0))
+
+def fib2(n):
+    result = []
+    a, b = 0, 1
+    while a < n:
+        result.append(a)
+        a, b = b, a+b
+    return result
+f100 = fib(100)
+f100
+i = 11
+def f(arg=i):
+    print(arg)
+i = 6
+f()
+
+def f(a, L=[]):
+    L.append(a)
+    return L
+print(f(1))
+print(f(2))
+print(f(3))
+print(f("b", L = []))
+print(f("c", L = ["a", "b"]))
+print(f("d", ["a", "b", "c"]))
+
+def f(a, L=None):
+    if L is None:
+        L = []
+    L.append(a)
+    return L
+print(f(1))
+print(f(2))
+print(f(3))
+print(f("b", L = []))
+print(f("c", L = ["a", "b"]))
+print(f("d", ["a", "b", "c"]))
+
+def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
+    print("-- This parrot wouldn't", action, end=' ')
+    print("if you put", voltage, "volts through it.")
+    print("-- Lovely plumage, the", type)
+    print("-- It's", state, "!")
+parrot(voltage = 1000000)
+parrot(state = "A person", voltage = 100, action = "action", type = "ruler")
+
+def cheeseshop(kind, *arguments, **keywords):
+    print("-- Do you have any", kind, "?")
+    print("-- I'm sorry, we're all out of", kind)
+    for arg in arguments:
+        print(arg)
+    print("-" * 40)
+    for kw in keywords:
+        print(kw, ":", keywords[kw])
+cheeseshop("swiss", "cheddar", "cottage", baz = "hello", baf = "world")
+def summation(*terms):
+    return(sum(terms))
+print(summation(1))
+print(summation(1, 2))
+print(summation(1, 2, 3))
+
+def email(*namelist):
+    for name in namelist:
+        print(f"Thank you {name}")
+email("Alice", "Bob", "Carrol")
+
+#def ask_ok(prompt, retries = 4, reminder = "please try again!"):
+#    while True:
+#        ok = input(prompt)
+#        if ok in ('y', 'ye', 'yes'):
+#            return True
+#        if ok in ('n', 'no', 'nop', 'nope'):
+#            return True
+#            retries = retries - 1
+#        if retries < 0:
+#             raise ValueError('invalid user response')
+#        print(reminder)
+#ask_ok(prompt = 'ye')
+
+def product(*args):
+    """This returns the product of all the elements of args"""
+    end_product = 1
+    for arg in args:
+        end_product = end_product * arg
+        # end_product *= arg
+    return end_product
+print(product(2,3,4))
+print(product.__doc__)
+
+
+i = 5
+
+def f(arg=i):
+    print(arg)
+i = 6
+f()
+
+def f(a, L=[]):
+    L.append(a)
+    return L
+
+print(f(1))
+
+def function(a):
+    pass
+
+def cheeseshop(kind, *arguments, **keywords):
+    print("--Do you have any", kind, "?")
+    print("-- I'm sorry, we're all out of", kind)
+    for arg in arguments:
+        print(arg)
+    print("-" * 40)
+    for kw in keywords:
+        print(kw, ":", keywords[kw])
+
+cheeseshop("Limburger", "It's very runny, sir.",
+           "It's really very, VERY runny, sir.",
+           shopkeeper="Michael Palin",
+           client="John Cleese",
+           sketch="Cheese Shop Sketch")
+#def f(pos1, pos2, / , pos_or_kwd, *, kwd1, kwd2):
+
+#def concat(*args, sep="/"):
+#    return sep.join(args)
+#concat("earth", "mars", "venus")
+#concat("earth", "mars", "venus", sep=".")
+
+args = [3, 6]
+print(range(*args))
+
+def make_incrementor(n):
+    return lambda x: x + n
+
+f = make_incrementor(42)
+f(1)
+
+pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
+pairs.sort(key=lambda pair: pair[1])
+print(pairs)
+
+def my_function():
+    """Do nothing but document it.
+
+    No really, it doesn't do anything
+    """
+    pass
+print(my_function.__doc__)
+
+def f(ham: str, eggs: str = "eggs") -> str:
+    print("Annotations:", f.__annotations__)
+    print("Annotations:", ham, eggs)
+    print(ham + " and " + eggs)
+f("spam")
