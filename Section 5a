@@ -19,7 +19,6 @@ stack.pop()
 print(stack)
 stack.pop()
 print(stack)
-
 from collections import deque
 queue = deque(["Eric", "John", "Michael"])
 queue.append("Terry")
