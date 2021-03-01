@@ -33,3 +33,18 @@ ngram("Hello")
 #Skim chapter 9
 #Do matplotlib for problem 3
 #upload code to Github
+
+#HW 2/22/20
+#Read and do all the green code up through 9.5
+#Skim 9.6 - 9.10
+#Create an object that represent the account with the following attributes:
+#Account balances by year, interest rate, random number weight, number of years
+#One constructor that takes in the interest rate, number of years, and random number weight
+#A method to generate the matplotplot
+#A method to run the simulation
+#A method to print the simulation to json
+#A method to print the simulation to yaml
+#Make a class representing a travel agency
+#Attributes: How many customers they have
+#Make a class representing a trip
+#Attributes: Where you are going
