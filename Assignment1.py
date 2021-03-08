@@ -48,3 +48,21 @@ ngram("Hello")
 #Attributes: How many customers they have
 #Make a class representing a trip
 #Attributes: Where you are going
+
+
+#HW 3/1/21
+#Make a class representing a travel agency
+#Attributes: How many customers they have
+#Constructor - List of customers
+#Make a class representing a trip
+#Attributes: Where you are going
+
+#Make a portfolio class - list of accounts
+#It will have - list of accounts
+#A constructor, a getter that prints out the list of all the accounts
+#Another method that makes a graph of all the accounts
+
+#Read the rest of section 9
+#Skim section 10
+#Skim Jengo tutorial
+#Submit HW to Github

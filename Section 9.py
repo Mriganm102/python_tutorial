@@ -70,7 +70,7 @@ e = Dog('Buddy')
 print(d.add_trick('roll over'))
 print(e.add_trick('play dead'))
 print(d.tricks)
-
+print(e.tricks)
 class Dog:
 
     def __init__(self, name):
@@ -109,3 +109,108 @@ class Bag:
     def addtwice(self, x):
         self.add(x)
         self.add(x)
+
+class carnivore(object):
+    favorite_food = "meat"
+
+class canine(object):
+    sound = "bark"
+    color = "gray"
+class dog(canine, carnivore):
+    sound = "woof"
+    color = "brown"
+class wolf(canine):
+    sound = "Howl"
+fido = dog()
+print(fido.favorite_food)
+
+class poodle(dog):
+    __sound_ = "bark"
+
+class Employee:
+    pass
+john = Employee()
+john.name = "John Doe"
+john.department = "computer lab"
+print(john.name)
+print(john.department)
+
+
+
+class Portfolio:
+    def __init__(self, accounts, money):
+        self.accounts = accounts
+        self.money = money
+        list1 = []
+        for i in range(0, accounts):
+            import random
+            money1 = money - 1000
+            money2 = money + 1000
+            money = random.randint(money1, money2)
+            list1.append(money)
+        print(list1)
+        import matplotlib.pyplot as mat
+        mat.plot(list1)
+        mat.show()
+
+Portfolio(19, 3569)
+
+
+class Mapping:
+    def __init__(self, iterable):
+        self.items_list = []
+        self.__update(iterable)
+
+    def update(self, iterable):
+        for item in iterable:
+            self.items_list.append(item)
+    __update = update
+
+class MappingSubclass(Mapping):
+    def update(self, keys, values):
+        for item in zip(keys, values):
+            self.items_list.append(item)
+
+for element in [1, 2, 3]:
+    print(element)
+for element in (1, 2, 3):
+    print(element)
+for key in {'one':1, 'two':2}:
+    print(key)
+for char in "123":
+    print(char)
+for line in open("firstfile.text"):
+    print(line, end='!')
+
+s = 'abc'
+it = iter(s)
+next(it)
+next(it)
+next(it)
+
+class Reverse:
+    def __init__(self, data):
+        self.data = data
+        self.index = len(data)
+    def __iter__(self):
+        return self
+    def __next__(self):
+        if self.index == 0:
+            raise StopIteration
+        self.index = self.index - 1
+        return self.data[self.index]
+rev = Reverse('spam')
+iter(rev)
+for char in rev:
+    print(char)
+
+def reverse(data):
+    for index in range(len(data)-1, -1, -1):
+        yield data[index]
+for char in reverse('golf'):
+        print(char)
+
+print(sum(i*i for i in range(10)))
+xvec = [10, 20, 30]
+yvec = [7, 5, 3]
+print(sum(x*y for x,y in zip(xvec, yvec)))
