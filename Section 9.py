@@ -214,3 +214,62 @@ print(sum(i*i for i in range(10)))
 xvec = [10, 20, 30]
 yvec = [7, 5, 3]
 print(sum(x*y for x,y in zip(xvec, yvec)))
+
+
+class Mapping:
+    def __init__(self, iterable):
+        self.items_list = []
+        self.__update(iterable)
+
+    def update(self, iterable):
+        for item in iterable:
+            self.items_list.append(item)
+
+    __update = update   # private copy of original update() method
+
+class MappingSubclass(Mapping):
+
+    def update(self, keys, values):
+        # provides new signature for update()
+        # but does not break __init__()
+        for item in zip(keys, values):
+            self.items_list.append(item)
+
+mapping_object = Mapping([1, 2, 3])
+mapping_object.update([4, 5, 6])
+print(mapping_object.items_list)
+mapping_subclass_object = MappingSubclass([1, 2, 3])
+mapping_subclass_object.update([4, 5, 6], [7, 8, 9])
+print(mapping_subclass_object.items_list)
+
+def foo():
+    yield 1
+    yield 2
+    yield 3
+print(foo())
+print(foo())
+print(foo())
+print(foo())
+for value in foo():
+    print(value)
+
+def foo1():
+    yield 1
+    yield 2
+    yield 3
+    yield "a"
+    yield "b"
+for value in foo1():
+    print(value)
+
+def reverse(data):
+    for index in range(len(data)-1, -1, -1):
+        yield data[index]
+for char in reverse('golf'):
+    print(char)
+
+print(sum(i*i for i in range(10)))
+xvec = [10, 20, 30]
+yvec = [7, 5, 3]
+print(sum(x*y for x,y in zip(xvec, yvec)))
+

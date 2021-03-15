@@ -66,3 +66,8 @@ ngram("Hello")
 #Skim section 10
 #Skim Jengo tutorial
 #Submit HW to Github
+
+#HW 3/8/21
+#To make the account class iterable my giving it a next method
+#Make the account class a generator
+#Graph all 19 accounts on 1 graph
