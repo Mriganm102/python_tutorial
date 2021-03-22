@@ -71,3 +71,10 @@ ngram("Hello")
 #To make the account class iterable my giving it a next method
 #Make the account class a generator
 #Graph all 19 accounts on 1 graph
+
+#HW 3/15/21
+#Skim chapter 10 in python tutorial
+#Skim Django tutorial section 1
+#Make the portfolio class iterable
+#Make the Travel Agency driver
+#Make an index.html file that says Hello World

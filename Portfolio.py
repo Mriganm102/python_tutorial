@@ -44,7 +44,7 @@ class Account:
     def __str__(self):
         return str(self.money1)
 #Account(5000, 0.2, 50, 40)
-#account = Account(5000, 0.2, 50, 40)
+account = Account(5000, 0.2, 50, 40)
 #account.json()
 #account.yaml()
 
@@ -79,5 +79,6 @@ print(portfolio)
 iter(portfolio)
 #[account.plot() for account in portfolio.list1]
 portfolio.plot()
-for account in portfolio:
-    print(str(account))
+for i in account.money1:
+    print(i)
+
