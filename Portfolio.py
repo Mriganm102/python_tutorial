@@ -74,11 +74,12 @@ class Portfolio:
         for account in self.list1:
             mat.plot(account.money1)
         mat.show()
-portfolio = Portfolio(5, 3569, 35, 2)
+portfolio = Portfolio(5, 3569, 2, 2)
 print(portfolio)
 iter(portfolio)
 #[account.plot() for account in portfolio.list1]
 portfolio.plot()
 for i in account.money1:
     print(i)
+
 

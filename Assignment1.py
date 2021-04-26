@@ -78,3 +78,37 @@ ngram("Hello")
 #Make the portfolio class iterable
 #Make the Travel Agency driver
 #Make an index.html file that says Hello World
+
+#HW 3/15/21
+#Make a bussiness planner story. Write a pitch and explain the logic
+#Write down Questions for ch10
+#Skim section 11
+#Do first page of Django tutorial
+
+#4/5/21
+#Create models for customer, location, and itinerary.
+
+#The customer model should have
+#First name
+#Last name
+#Age
+#Foreign key location
+#The location model should have the following fields
+#Country
+#City
+#The itinerary model  should have
+#Foreign key starting location
+#Foreign key destination
+#Foreign key customer
+#Price
+#If you have time, you can make views to display the three models.
+
+#HW 4/12/21
+#Go through django_tutorial section 2
+#create 2-string methods for location, customer, and itenary
+#make views for location, customer, and itenary
+#do writing more views(section3)
+#Skim the rest of section3
+
+#HW 4/26/21
+#type out rest of section11

@@ -31,22 +31,32 @@ class Travel_Agency(Corporation):
 class Trip_Planner:
     def __init__(self, location):
         self.location = location
-#    location = self.location
-    people = []
+    def __str__(self):
+        return str(self.location)
     starting_point = ''
     ending_point = ''
     per_person = []
+    people = []
 class Person:
     def __init__(self, person):
         self.person = person
         self.people = Trip_Planner.people
         self.people.append(self.person)
-        print(self.people)
-        b = self.people
+    def __str__(self):
+        return str(self.person)
 
-Person("Al")
-Person("Jill")
+
+c = Person("Al")
+d = Person("Jill")
 a = Trip_Planner("Brazil")
+Trip_Planner("Brazil")
+Al = Person('Al')
+Jill = Person("Jill")
+Brazil = Trip_Planner("Brazil")
+customers3 = [str(c), str(d)]
+and1 = " and "
+customers3 = and1.join(customers3)
+
 
 
 
@@ -70,14 +80,12 @@ class Travel_Agency(Corporation):
             i = str(i)
             self.corportation.append(i)
     cash = []
+    def __str__(self):
+        return str(self.spain)
     def booking(self, destination, people, price):
-        if destination == None:
-            destination = str(a)
-        if people == None:
-            people = Person(self.people)
-        print(str(people), "go on a trip to", destination, "for", price, "dollars.")
-Travel_Agency.booking(self="", destination=None, people=None, price=1200)
-
+        print(people, "go on a trip to", destination, "for", price, "dollars.")
+TA = Travel_Agency(c)
+TA.booking(Brazil, customers3, 12000)
 
 #Create 3 different trips
 #Add the trips to the products list in the Travel Agency
