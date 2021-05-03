@@ -112,3 +112,14 @@ ngram("Hello")
 
 #HW 4/26/21
 #type out rest of section11
+#write down chapter11 questions
+#do first codeblock of Django section3
+#make a customer list to display customers.
+# Add template and make a list of customers
+#Make another view that is for a particular customer.
+# first name, last name, age, id, location
+#make a view for location list.
+# have a hypertext reference to specific location
+#detailed view for location
+#make a view for the iternary list.
+# make details about each iternary
