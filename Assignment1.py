@@ -132,3 +132,9 @@ ngram("Hello")
 #will go back to the index
 #From each specific view page make it go back to the original
 #view list
+
+#For each specific view go back to the default page
+#add try except clauses to all the views
+#CHange hard coated path to using url function in all templates
+#Skim section4 - writing in minimal form and used generic views
+
