@@ -123,3 +123,12 @@ ngram("Hello")
 #detailed view for location
 #make a view for the iternary list.
 # make details about each iternary
+
+#HW 5/3/21
+#fill out templates for specific customer and specific iternary
+#If you have ":8000" map it to the index page
+#Make it so you can link the other lists from the index page
+#At the bottom of the template make a hypertext reference so
+#will go back to the index
+#From each specific view page make it go back to the original
+#view list
