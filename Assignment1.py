@@ -138,3 +138,15 @@ ngram("Hello")
 #CHange hard coated path to using url function in all templates
 #Skim section4 - writing in minimal form and used generic views
 
+#HW 5/17
+#Make new page that has different forms
+#1) Asking person what user the order is for
+#2)What is the starting location and destination and price
+#3)Make an iternary based on this info
+#Skim section5 of django
+
+#6/21/21
+#Format slides so they look visually balanced
+#Add 1 image per section
+#practice presentation once a day on Saturday + Sunday
+#commit all code to github

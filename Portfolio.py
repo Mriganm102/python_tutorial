@@ -43,8 +43,9 @@ class Account:
         file_handle.close()
     def __str__(self):
         return str(self.money1)
-#Account(5000, 0.2, 50, 40)
-account = Account(5000, 0.2, 50, 40)
+account = Account(start=5000, interest=0.2, randomI=50, years=4)
+account.plot()
+print(str(account))
 #account.json()
 #account.yaml()
 
@@ -74,12 +75,12 @@ class Portfolio:
         for account in self.list1:
             mat.plot(account.money1)
         mat.show()
-portfolio = Portfolio(5, 3569, 2, 2)
+portfolio = Portfolio(years=5, money=3569, accounts=2, interest=2)
 print(portfolio)
 iter(portfolio)
 #[account.plot() for account in portfolio.list1]
 portfolio.plot()
-for i in account.money1:
-    print(i)
+#for i in account.money1:
+#    print(i)
 
 
